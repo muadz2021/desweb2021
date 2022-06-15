@@ -1,0 +1,5 @@
+.highlight.active {
+    background-color: yellow;
+    color: red;
+    font-weight: 900;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menggunakan media Query CSS3</title>
+
+    <style>
+        .w1024{
+            display: none;
+        }
+
+        @media only screen and (min-width: 1024px){
+            body{
+                background-color: yellow;
+            }
+
+            .w1024{
+                display: block;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <h3>Menggunakan Media Query CSS 3</h3>
+    <div class="w1024">
+        <h2>Terdeteksi panjang 1024px</h2>
+        <img src="https://uns.ac.id/id/wp-content/uploads/logo-header-uns.png">
+    </div>
+</body>
+</html>

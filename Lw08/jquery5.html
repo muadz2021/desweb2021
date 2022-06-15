@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialog</title>
+
+    <link rel="stylesheet" type="text/css" href="bahan/jquery-ui.min.css">
+    <script type="text/javascript" src="asset/jquery/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="asset/jquery-ui/jquery-ui.min.js"></script>
+</head>
+
+<body>
+    <button id="bukaDialog">Klik Saya !</button>
+    <div id="dialog" title="Hello World">
+        Halo, Salam kenal !
+    </div>
+
+    <script>
+        $(function(){
+            $('#dialog').dialog({ autoOpen: false });
+            $('#bukaDialog').click(function(){
+                $('#dialog').dialog("open");
+            });
+        });
+    </script>
+</body>
+</html>
